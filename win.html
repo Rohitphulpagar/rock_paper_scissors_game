@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./win.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="section">
+    <div id="cup" class="cup">
+        <img src="./img/cup.png" alt="">
+    </div>
+<div id="heading">
+    <div>
+        <h1 class="hd1">HURRAY!!</h1>
+    </div>
+    <div class="hd">
+        <h2 class="hd2">YOU WON THE GAME</h2>
+    </div>
+<div class="play">
+<a href="index.html"><button class="but">PLAY AGAIN</button></a>
+</div></div></div>
+<div class="section1">
+<div id="tables" class="tables">
+    <img onclick="imgs()" id="ones" src="./img/table.png" alt="">
+</div>
+<div class="last">
+
+    <button id="control" onclick="rules()" ><h3>RULES</h3></button></div></div>
+</div>
+<script>
+    function rules(){
+        document.getElementById('tables').style.display='flex';
+    }
+    function imgs(){
+        document.getElementById('ones').style.display='none';
+    }
+</script>
+</body>
+</html>

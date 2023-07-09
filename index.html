@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body onload="get()">
+ 
+<div id="container">
+
+    <div id="box1">
+        <div class="board">
+            <h1 class="heading">ROCK <br>PAPER <br>SCISSORS</h1>
+            <div id="computerScore"><h3 class="heading1">COMPUTER &nbsp;SCORE</h3>
+            <div id="score_com">
+                <h2 id="computer_score" type="number" onclick="save()">0</h2>
+            </div>
+            </div>
+            <div id="yourscore"><h3 class="heading2">YOUR SCORE</h3>
+            <div id="score_you" >
+                    <h2 id="user_score" type="number1" onclick="save()">0</h2>
+            </div>
+            </div>
+        </div>
+          
+    </div>
+    <div id="box2">
+        <div id="box3">
+            <div id="triangle" class="middleSection">
+    
+                <div id="divide1" class="divide1">
+                    <div id="img1">
+                
+                     <img onclick="myFunction()"  class="option" src="./img/stone.svg" alt="stone" id="rock">
+
+                     <img onclick="myFunction2()"  class="option" src="./img/scissors.png" alt="scissors" id="scissors">
+                    </div>
+             <div onclick="myFunction3()" id="img3">
+                       <img onclick="myfunction3()" class="option" src="./img/paper.svg" alt="paper" id="paper">
+                    </div>
+                    </div>
+                    
+                    <div class="bottomSection" id="bottomSection">
+                        <div class="userContainer">
+                            <h2>YOU PICKED</h2>
+                            <img id="userPick" src="./img/scissors.png" alt="">
+                        </div>
+                        <div class="resultContainer">
+                            <h1> &nbsp;&nbsp;YOU WIN <br>AGAINST PC</h1><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="show()" id="palys" style="height: 40px; width: 180;">PLAY AGAIN</button>
+                        </div>
+                        <div class="computerContainer">
+                            <h2>&nbsp;&nbsp;&nbsp;&nbsp;PC PICKED</h2>
+                            <img id="computerPick" src="./img/paper.svg" alt="">
+                        </div></div>
+
+
+                        <div class="loseSection" id="loseSection">
+                            <div class="userContainer1">
+                                <h2>YOU PICKED</h2>
+                                <img src="./img/paper.svg" alt="">
+                            </div>
+                            <div class="resultContainer1">
+                                <h1> &nbsp;&nbsp;YOU LOST <br>AGAINST PC</h1><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="show1()" id="play_again" style="height: 40px; width: 180;">PLAY AGAIN</button>
+                            </div>
+                            <div class="computerContainer1">
+                                <h2>&nbsp;&nbsp;&nbsp;&nbsp;PC PICKED</h2>
+                                <img src="./img/scissors.png" alt="">
+                            </div>
+                    </div>
+                    <div class="tieSection" id="tieSection">
+                        <div class="userContainer2">
+                            <h2>YOU PICKED</h2>
+                            <img src="./img/stone.svg" alt="">
+                        </div>
+                        <div class="resultContainer2">
+                            <h1>TIE UP</h1><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<button onclick="show2()" id="replay"  style="height: 40px; width: 100px;">REPLAY</button>
+                        </div>
+                        <div class="computerContainer2">
+                            <h2>&nbsp;&nbsp;&nbsp;&nbsp;PC PICKED</h2>
+                            <img src="./img/stone.svg" alt="">
+                        </div>
+                </div></div>
+
+        </div>
+        <div id="box4">
+            <span class="rul" id="rul">
+            
+                <button id="control" onclick="rules()" ><h3>RULES</h3></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="win.html"> <bUtton id="control1"><h3>NEXT</h3></bUtton></a>
+               
+            </span> 
+            <div id="tables" class="tables">
+                <img onclick="imgs()" src="./img/table.png" alt="">
+            </div>
+
+</div>
+
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
